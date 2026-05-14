@@ -1,0 +1,10 @@
+title: Dating Edge
+description: Online dating strategy and relationship advice
+theme: minima
+baseurl: ""
+url: "https://datingedge.io"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
