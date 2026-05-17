@@ -2,214 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Dating Edge — Attachment Psychology for Modern Relationships</title>
-<meta name="description" content="Psychology-based relationship advice for people who want to understand why patterns repeat - and how to change them.">
-<link rel="canonical" href="https://siavashsed.github.io/datingedge/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>siavashsed.github.io/datingedge — Dating & Relationships</title>
+<meta name="description" content="Expert insights on dating & relationships">
+
+
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0c0810;--bg2:#160c1c;--surf:#1e1026;--text:#fce8ef;--muted:#a0748a;--rose:#f43f5e;--brd:#2e1a26}
-body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.7}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
-/* NAV */
-#nav{position:sticky;top:0;z-index:100;background:rgba(12,8,16,.96);border-bottom:1px solid var(--brd);backdrop-filter:blur(10px)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:20px}
-.nav-logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--text);flex-shrink:0}
-.nav-logo em{color:var(--rose);font-style:normal}
-.nav-links{display:flex;gap:2px;flex:1}
-.nav-links a{font-size:12px;font-weight:500;color:var(--muted);padding:6px 14px;border-radius:20px;letter-spacing:.3px;transition:all .2s}
-.nav-links a:hover{color:var(--text);background:rgba(244,63,94,.08)}
-/* HERO */
-#hero{max-width:1200px;margin:0 auto;padding:40px 24px 0;display:grid;grid-template-columns:1.6fr 1fr;gap:32px;align-items:center}
-.hero-left{position:relative}
-.hero-img-wrap{border-radius:12px;overflow:hidden;height:440px;background:var(--bg2);margin-bottom:24px}
-.hero-img-wrap img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block}
-.hero-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--rose);margin-bottom:12px}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,38px);font-weight:700;line-height:1.2;margin-bottom:12px}
-.hero-desc{font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:18px}
-.hero-btn{display:inline-block;border:1px solid var(--rose);color:var(--rose);font-size:12px;font-weight:600;letter-spacing:.5px;padding:10px 24px;border-radius:24px;transition:all .2s}
-.hero-btn:hover{background:var(--rose);color:#fff}
-.hero-right{display:flex;flex-direction:column;gap:16px}
-.mini-card{display:flex;gap:12px;align-items:center;background:var(--surf);border-radius:10px;padding:14px;border:1px solid var(--brd);transition:border-color .2s}
-.mini-card:hover{border-color:var(--rose)}
-.mini-card img{width:80px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0}
-.mini-tag{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--rose);margin-bottom:4px}
-.mini-title{font-size:13px;font-weight:600;line-height:1.4}
-.mini-meta{font-size:10px;color:var(--muted);margin-top:4px}
-/* DIVIDER */
-.divider{display:flex;align-items:center;gap:16px;max-width:1200px;margin:40px auto;padding:0 24px}
-.divider-line{flex:1;height:1px;background:var(--brd)}
-.divider-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--rose)}
-/* GRID */
-.article-grid{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.a-card{background:var(--surf);border-radius:12px;overflow:hidden;border:1px solid var(--brd);transition:transform .2s,border-color .2s}
-.a-card:hover{transform:translateY(-2px);border-color:var(--rose)}
-.a-card img{width:100%;height:180px;object-fit:cover}
-.a-card-body{padding:16px}
-.a-tag{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--rose);margin-bottom:8px}
-.a-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;line-height:1.35;margin-bottom:8px}
-.a-meta{font-size:10px;color:var(--muted)}
-/* PULL QUOTE */
-.pullquote{background:linear-gradient(135deg,#160c1c 0%,#1e1026 100%);border-left:3px solid var(--rose);max-width:1200px;margin:48px auto;padding:40px 48px;border-radius:0 12px 12px 0}
-.pullquote blockquote{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--text);line-height:1.5;margin-bottom:12px}
-.pullquote cite{font-size:12px;color:var(--rose);font-weight:600;text-transform:uppercase;letter-spacing:.8px}
-/* NEWSLETTER */
-.nl-band{background:linear-gradient(135deg,#1e1026 0%,#160c1c 100%);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);padding:56px 24px;text-align:center;margin:48px 0}
-.nl-band h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:8px}
-.nl-band p{color:var(--muted);font-size:14px;margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
-.nl-row{display:flex;gap:8px;max-width:420px;margin:0 auto;justify-content:center}
-.nl-row input{flex:1;padding:11px 16px;background:var(--bg);border:1px solid var(--brd);border-radius:24px;color:var(--text);font-size:13px}
-.nl-row input:focus{outline:1px solid var(--rose)}
-.nl-row button{background:var(--rose);color:#fff;border:none;padding:11px 22px;border-radius:24px;font-size:13px;font-weight:600;cursor:pointer}
-/* FOOTER */
-#foot{background:var(--bg);border-top:1px solid var(--brd);padding:40px 24px;margin-top:60px}
-.foot-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
-.foot-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700}
-.foot-logo em{color:var(--rose);font-style:normal}
-.foot-links{display:flex;gap:16px}
-.foot-links a{font-size:12px;color:var(--muted)}
-.foot-links a:hover{color:var(--rose)}
-.foot-copy{width:100%;text-align:center;font-size:11px;color:var(--muted);padding-top:20px;border-top:1px solid var(--brd)}
-/* RESPONSIVE */
-@media(max-width:900px){#hero{grid-template-columns:1fr}.hero-right{flex-direction:row;flex-wrap:wrap}.mini-card{width:calc(50% - 8px)}.article-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.pullquote{padding:24px 24px 24px 28px}}
-@media(max-width:600px){.article-grid{grid-template-columns:1fr}.mini-card{width:100%}.hero-img-wrap{height:280px}.nl-row{flex-direction:column}}
+body{font-family:'Inter',sans-serif;background:#0d0d0d;color:#e8e8e8;line-height:1.65;font-size:16px}
+a{color:#6c63ff;text-decoration:none}
+a:hover{color:#9d97ff}
+img{max-width:100%;display:block;height:auto}
+
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.hdr{background:#0d0d0d;border-bottom:1px solid #252525;padding:20px 0;text-align:center}
+.logo{font-size:28px;font-weight:800;color:#6c63ff;display:block;margin-bottom:4px}
+.tagline{font-size:12px;color:#555;text-transform:uppercase;letter-spacing:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px;margin-top:40px}
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav id="nav">
-  <div class="nav-inner">
-    <div class="nav-logo">The <em>Dating</em> Edge</div>
-    <div class="nav-links">
-      <a href="#">Attachment</a>
-      <a href="#">Communication</a>
-      <a href="#">First Dates</a>
-      <a href="#">Psychology</a>
-      <a href="#">Breakups</a>
-      <a href="about.html">About</a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<div id="hero">
-  <div class="hero-left">
-    <div class="hero-img-wrap"><img id="hero-img" src="" alt=""></div>
-    <div class="hero-tag" id="hero-tag">Featured</div>
-    <div class="hero-title serif" id="hero-title">Loading…</div>
-    <div class="hero-desc" id="hero-desc"></div>
-    <a class="hero-btn" id="hero-link" href="#">Read More →</a>
-  </div>
-  <div class="hero-right" id="mini-list"></div>
+<div class="hdr">
+  <a href="/" class="logo">siavashsed.github.io/datingedge</a>
+  <span class="tagline">Dating & Relationships</span>
 </div>
-
-<!-- DIVIDER -->
-<div class="divider"><div class="divider-line"></div><div class="divider-label">Latest Articles</div><div class="divider-line"></div></div>
-
-<!-- GRID -->
-<div class="article-grid" id="article-grid"></div>
-
-<!-- PULL QUOTE -->
-<div class="pullquote">
-  <blockquote>"The patterns we repeat in relationships are rarely about the current partner. They're about the map we drew from our earliest attachments — and most people never look at the map."</blockquote>
-  <cite>— Dr. Priya Sharma, Clinical Psychologist, Relationships Specialist</cite>
+<div class="wrap">
+  <div style="margin:40px 0"><div style="background:url(https://images.pexels.com/photos/7339183/pexels-photo-7339183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center/cover;height:420px;border-radius:12px;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 60%)"></div><div style="position:absolute;bottom:0;left:0;right:0;padding:28px"><span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#6c63ff">Dating & Relationships</span><br><a href="/dating-app-profile-no-matches-fix/" style="font-size:clamp(22px,4vw,34px);font-weight:700;color:#fff;line-height:1.2;display:block;margin:8px 0">Why Your Dating App Profile Isn't Getting Matches (And How to Fix It)</a><span style="font-size:13px;color:rgba(255,255,255,.7)">May 17, 2026</span></div></div></div>
+  <div class="grid"></div>
 </div>
-
-<!-- NEWSLETTER -->
-<div class="nl-band">
-  <h2 class="serif">The Relationship Brief</h2>
-  <p>Weekly insights on attachment, communication, and modern dating psychology.</p>
-  <div class="nl-row">
-    <input type="email" placeholder="your@email.com">
-    <button>Subscribe</button>
-  </div>
-</div>
-
-<div style="background:#160c1c;border-top:1px solid #2e1a26;border-bottom:1px solid #2e1a26;padding:40px">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-size:10px;color:#f43f5e;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px">// about this publication</div>
-    <div style="display:grid;grid-template-columns:60px 1fr;gap:20px;align-items:start;margin-bottom:24px">
-      <div style="width:56px;height:56px;border-radius:50%;background:#f43f5e;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#000;flex-shrink:0;letter-spacing:-1px">DP</div>
-      <div>
-        <div style="font-size:16px;font-weight:700;color:#fce8ef;margin-bottom:2px">Dr. Priya Sharma</div>
-        <div style="font-size:12px;color:#f43f5e;margin-bottom:14px;font-weight:600">Clinical Psychologist, Relationships Specialist</div>
-        <p style="font-size:14px;color:#a0748a;line-height:1.85;margin-bottom:12px">After a decade in clinical practice working with couples and individuals, I got tired of watching people repeat the same patterns while reading the same surface-level dating advice.</p>
-        <p style="font-size:14px;color:#a0748a;line-height:1.85">The Dating Edge is built around attachment theory, communication research, and the psychology of attraction - not pickup tactics or generic 'love yourself first' platitudes.</p>
-      </div>
-    </div>
-    <a href="about.html" style="display:inline-block;border:1px solid #f43f5e;color:#f43f5e;padding:8px 20px;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:1px;transition:all .2s">Full bio →</a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer id="foot">
-  <div class="foot-inner">
-    <div class="foot-logo">The <em>Dating</em> Edge</div>
-    <div class="foot-links">
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </div>
-    <div class="foot-copy">© The Dating Edge. Clinical psychology applied to modern dating and relationships.</div>
-  </div>
-</footer>
-
-<script>
-var CATS=['Attachment','Communication','First Dates','Psychology','Breakups','Attraction'];
-function cat(i){return CATS[i%CATS.length];}
-function fmt(d){try{return new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}catch(e){return '';}}
-function picUrl(slug,w,h){var seed=Math.abs(slug.split('').reduce(function(a,c){return a+c.charCodeAt(0);},0))%1000;return 'https://picsum.photos/seed/de'+seed+'/'+w+'/'+h;}
-
-function render(posts){
-  if(!posts||!posts.length)return;
-  var p0=posts[0];
-  document.getElementById('hero-tag').textContent=cat(0);
-  document.getElementById('hero-title').textContent=p0.title||'';
-  document.getElementById('hero-desc').textContent=p0.meta_description||'';
-  document.getElementById('hero-link').href=(p0.slug||'#')+'/';
-  var hi=document.getElementById('hero-img');
-  hi.onload=function(){hi.style.opacity='1';};
-  hi.src=p0.image||picUrl(p0.slug||'hero',900,440);
-
-  // Mini cards (posts 1-4)
-  document.getElementById('mini-list').innerHTML=posts.slice(1,5).map(function(p,i){
-    return '<div class="mini-card"><a href="'+(p.slug||'#')+'/"><img src="'+(p.image||picUrl(p.slug||'m'+i,160,120))+'" alt="" loading="lazy"></a><div><div class="mini-tag">'+cat(i+1)+'</div><div class="mini-title"><a href="'+(p.slug||'#')+'/">'+p.title+'</a></div><div class="mini-meta">'+fmt(p.date_iso)+'</div></div></div>';
-  }).join('');
-
-  // Article grid (posts 5-13)
-  document.getElementById('article-grid').innerHTML=posts.slice(5,14).map(function(p,i){
-    return '<div class="a-card"><a href="'+(p.slug||'#')+'/"><img src="'+(p.image||picUrl(p.slug||'a'+i,400,180))+'" alt="" loading="lazy"></a><div class="a-card-body"><div class="a-tag">'+cat(i+2)+'</div><div class="a-title serif"><a href="'+(p.slug||'#')+'/">'+p.title+'</a></div><div class="a-meta">'+fmt(p.date_iso)+'</div></div></div>';
-  }).join('');
-}
-
-fetch('articles.json').then(function(r){return r.json();}).then(render).catch(function(){
-  render([{title:'Attachment Styles and Why You Keep Dating the Same Person',slug:'attachment-styles',meta_description:'Psychology-based relationship advice for people who want to understand why patterns repeat - and how to change them.',date_iso:new Date().toISOString()}]);
-});
-/* banner loader: pexels → picsum fallback */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  var k=localStorage.getItem('pexelsKey');
-  if(k){
-    fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('couple relationship psychology conversation')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else{showImg('https://picsum.photos/seed/613/1400/400','');}
-      }).catch(function(){showImg('https://picsum.photos/seed/613/1400/400','');});
-  }else{
-    showImg('https://picsum.photos/seed/613/1400/400','');
-  }
-})();
-</script>
-</body>
-</html>
+<footer style="background:#141414;border-top:1px solid #252525;padding:40px 24px;text-align:center;font-size:13px;color:#555;margin-top:60px">
+<p>&copy; 2026 siavashsed.github.io/datingedge &nbsp;&middot;&nbsp; Dating & Relationships</p>
+<p style="margin-top:6px;font-size:11px">For informational purposes only. Not financial or investment advice.</p>
+<p style="margin-top:6px;font-size:11px"><a href="/about/" style="color:#555">About</a> &nbsp;&middot;&nbsp; <a href="/contact/" style="color:#555">Contact</a> &nbsp;&middot;&nbsp; <a href="/privacy/" style="color:#555">Privacy Policy</a></p>
+</footer></body></html>
