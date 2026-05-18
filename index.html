@@ -31,7 +31,7 @@ img{max-width:100%;display:block}
 .nav-in{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:64px;gap:40px}
 .nav-logo{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--text);letter-spacing:-.02em}
 .nav-logo em{color:var(--rose);font-style:italic}
-.nav-links{display:flex;gap:0;flex:1}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
 .nav-links a{font-size:13px;font-weight:500;padding:0 16px;height:64px;display:flex;align-items:center;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;letter-spacing:.01em}
 .nav-links a:hover{color:var(--text);border-color:var(--rose)}
 .nav-cta{margin-left:auto;background:var(--rose);color:#fff;font-size:13px;font-weight:600;padding:10px 22px;border-radius:100px;transition:background .15s}
@@ -287,6 +287,15 @@ const PLACEHOLDER_ARTS=[
   {title:"Dating After Divorce: What's Different, What's Not",slug:"dating-after-divorce",cat:"dating",excerpt:"Re-entering dating as a divorcee comes with unique challenges - and some unexpected advantages.",mins:7},
 ];
 
+const IMGS=[
+  'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=75',
+  'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600&q=75',
+  'https://images.unsplash.com/photo-1541963463532-d5a4f4e7eebc?w=600&q=75',
+  'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=75',
+  'https://images.unsplash.com/photo-1507537297725-f8b58ff1a61e?w=600&q=75',
+  'https://images.unsplash.com/photo-1488116908429-eef7bae617a4?w=600&q=75',
+];
+
 let arts=[];
 let activeFilter="all";
 
@@ -299,9 +308,9 @@ function setFilter(f){
 function renderGrid(){
   const g=document.getElementById("artGrid");
   const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
-  g.innerHTML=filtered.map(a=>`
+  g.innerHTML=filtered.map((a,i)=>`
     <a href="./${a.slug}/" class="art-card">
-      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="art-card-img"><img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
       <div class="art-cat">${a.cat}</div>
       <h3 class="art-title">${a.title}</h3>
       <p class="art-excerpt">${a.excerpt}</p>
@@ -310,18 +319,16 @@ function renderGrid(){
 }
 
 function renderStack(items){
-  document.getElementById("leadStack").innerHTML=items.slice(1,4).map(a=>`
+  document.getElementById("leadStack").innerHTML=items.slice(1,4).map((a,i)=>`
     <a href="./${a.slug}/" class="lead-sm">
-      <div class="lead-sm-img"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&q=70" alt="${a.title}" loading="lazy"></div>
+      <div class="lead-sm-img"><img src="${IMGS[(i+1)%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
       <div><div class="lead-sm-cat">${a.cat}</div><div class="lead-sm-title">${a.title}</div><div class="lead-sm-meta">${a.mins} min read</div></div>
     </a>`).join("");
 }
 
 async function load(){
-  try{
-    const r=await fetch("./articles.json");
-    if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}
-  }catch{arts=PLACEHOLDER_ARTS;}
+  try{const r=await fetch("./articles.json");if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}}
+  catch{arts=PLACEHOLDER_ARTS;}
   renderGrid();
   renderStack(arts);
   if(arts[0]){
@@ -329,6 +336,11 @@ async function load(){
     document.querySelector(".lead-main-title").textContent=arts[0].title;
     document.querySelector(".lead-main-excerpt").textContent=arts[0].excerpt||"";
     document.querySelector(".lead-main").href=`./${arts[0].slug}/`;
+    document.querySelector(".lead-main-img img").src=IMGS[0];
+  }
+  if(arts[3]){
+    const hf=document.getElementById("heroFeature");
+    if(hf){hf.querySelector(".hero-feature-cat").textContent=arts[3].cat;hf.querySelector(".hero-feature-title").textContent=arts[3].title;}
   }
 }
 load();
