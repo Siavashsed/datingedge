@@ -218,9 +218,7 @@ footer{background:var(--ink);padding:62px 0 28px}
 
 /* ---- REVEAL ---- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-
-@media(max-width:960px){
+.reveal.in{opacity:1;transform:none}@media(max-width:960px){
   .hero-in,.story-in{grid-template-columns:1fr;gap:46px}
   .hero-card{max-width:440px;margin:0 auto}
   .val-grid,.topic-grid,.art-grid{grid-template-columns:1fr 1fr}
@@ -228,8 +226,7 @@ footer{background:var(--ink);padding:62px 0 28px}
   .coach{grid-template-columns:1fr}
   .coach-portrait{min-height:240px}
   .footer-in{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
+}@media(max-width:640px){
   .nav-links{display:none}
   .nav-toggle{display:block}
   .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px}
@@ -244,6 +241,32 @@ footer{background:var(--ink);padding:62px 0 28px}
   .hc-float.one{left:-12px}
   .hc-float.two{right:-10px}
 }
+
+/* CONTRAST-AUDIT v1 */
+/* Article-page-only contrast guard. body[data-page-depth="1"] is stamped on
+   every article by layout_shell.wrap_page. Homepage (depth=0) is untouched. */
+body[data-page-depth="1"] h1,
+body[data-page-depth="1"] h2,
+body[data-page-depth="1"] h3,
+body[data-page-depth="1"] .art-title,
+body[data-page-depth="1"] .article-title,
+body[data-page-depth="1"] .mag-hero h1,
+body[data-page-depth="1"] .imm-hero h1,
+body[data-page-depth="1"] article h1,
+body[data-page-depth="1"] article h2,
+body[data-page-depth="1"] article h3{color:#000000 !important}
+body[data-page-depth="1"] article p,
+body[data-page-depth="1"] article li,
+body[data-page-depth="1"] .art-body p,
+body[data-page-depth="1"] .mag-body p,
+body[data-page-depth="1"] .imm-body p,
+body[data-page-depth="1"] article .intro,
+body[data-page-depth="1"] article .concl,
+body[data-page-depth="1"] article strong{color:#1a1a1a !important}
+body[data-page-depth="1"] article a,
+body[data-page-depth="1"] article p a,
+body[data-page-depth="1"] article .intro a{color:#b8503f !important;text-decoration:underline;text-underline-offset:3px}
+/* /CONTRAST-AUDIT */
 /* page */
 .aa{max-width:1040px;margin:0 auto;padding:48px 24px 96px;font-family:inherit}
 .aa-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#f43f5e;margin-bottom:12px}
@@ -270,9 +293,7 @@ footer{background:var(--ink);padding:62px 0 28px}
 .aa-pager{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:32px}
 .aa-pager button{background:#160c1c;border:1px solid #2e1a26;color:#221a16;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:8px 16px;border-radius:999px;cursor:pointer;font-family:inherit}
 .aa-pager button:disabled{opacity:.4;cursor:not-allowed}
-.aa-pager .aa-page-num{font-size:12px;color:#a0748a;font-weight:700}
-@media(max-width:560px){.aa-card{grid-template-columns:96px 1fr;gap:12px;padding:10px}.aa-thumb{height:88px}.aa-h{font-size:15px}.aa-desc{-webkit-line-clamp:2}}
-</style>
+.aa-pager .aa-page-num{font-size:12px;color:#a0748a;font-weight:700}@media(max-width:560px){.aa-card{grid-template-columns:96px 1fr;gap:12px;padding:10px}.aa-thumb{height:88px}.aa-h{font-size:15px}.aa-desc{-webkit-line-clamp:2}}</style>
 </head>
 <body data-page-depth="0">
 <nav class="site-nav">
