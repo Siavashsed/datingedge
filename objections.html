@@ -218,9 +218,7 @@ footer{background:var(--ink);padding:62px 0 28px}
 
 /* ---- REVEAL ---- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-
-@media(max-width:960px){
+.reveal.in{opacity:1;transform:none}@media(max-width:960px){
   .hero-in,.story-in{grid-template-columns:1fr;gap:46px}
   .hero-card{max-width:440px;margin:0 auto}
   .val-grid,.topic-grid,.art-grid{grid-template-columns:1fr 1fr}
@@ -228,8 +226,7 @@ footer{background:var(--ink);padding:62px 0 28px}
   .coach{grid-template-columns:1fr}
   .coach-portrait{min-height:240px}
   .footer-in{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
+}@media(max-width:640px){
   .nav-links{display:none}
   .nav-toggle{display:block}
   .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px}
@@ -244,6 +241,32 @@ footer{background:var(--ink);padding:62px 0 28px}
   .hc-float.one{left:-12px}
   .hc-float.two{right:-10px}
 }
+
+/* CONTRAST-AUDIT v1 */
+/* Article-page-only contrast guard. body[data-page-depth="1"] is stamped on
+   every article by layout_shell.wrap_page. Homepage (depth=0) is untouched. */
+body[data-page-depth="1"] h1,
+body[data-page-depth="1"] h2,
+body[data-page-depth="1"] h3,
+body[data-page-depth="1"] .art-title,
+body[data-page-depth="1"] .article-title,
+body[data-page-depth="1"] .mag-hero h1,
+body[data-page-depth="1"] .imm-hero h1,
+body[data-page-depth="1"] article h1,
+body[data-page-depth="1"] article h2,
+body[data-page-depth="1"] article h3{color:#000000 !important}
+body[data-page-depth="1"] article p,
+body[data-page-depth="1"] article li,
+body[data-page-depth="1"] .art-body p,
+body[data-page-depth="1"] .mag-body p,
+body[data-page-depth="1"] .imm-body p,
+body[data-page-depth="1"] article .intro,
+body[data-page-depth="1"] article .concl,
+body[data-page-depth="1"] article strong{color:#1a1a1a !important}
+body[data-page-depth="1"] article a,
+body[data-page-depth="1"] article p a,
+body[data-page-depth="1"] article .intro a{color:#b8503f !important;text-decoration:underline;text-underline-offset:3px}
+/* /CONTRAST-AUDIT */
 </style>
 </head>
 <body data-page-depth="0">
@@ -327,17 +350,13 @@ footer{background:var(--ink);padding:62px 0 28px}
 .ob-cta h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);font-weight:600;color:#fff;letter-spacing:-.02em;line-height:1.16;margin-bottom:12px}
 .ob-cta p{font-size:15.5px;color:rgba(255,255,255,.82);margin-bottom:26px}
 .ob-cta a{display:inline-block;background:#fff;color:var(--rose);font-size:15px;font-weight:600;padding:14px 30px;border-radius:100px;transition:transform .15s}
-.ob-cta a:hover{transform:translateY(-2px)}
-
-@media(max-width:760px){
+.ob-cta a:hover{transform:translateY(-2px)}@media(max-width:760px){
   .ob-vals{grid-template-columns:1fr}
-}
-@media(max-width:600px){
+}@media(max-width:600px){
   .ob-section{padding:54px 0}
   .ob-q{padding:18px 18px}
   .ob-q-main{font-size:17px}
-}
-</style>
+}</style>
 
 <main>
 <section class="ob-hero">
@@ -421,7 +440,7 @@ footer{background:var(--ink);padding:62px 0 28px}
           <p>First, the important part: being ghosted is not a measure of your worth. It is mostly a measure of the other person's comfort with conflict. Ghosting is an avoidance habit the apps make easy - it says far more about them than about you.</p>
           <p>That said, "always" is worth gently examining. If it keeps happening, look at patterns you can actually influence: are you investing heavily before you have met, reading early texts as commitment, or staying with people who were lukewarm from the start?</p>
           <p>Keeping your feet under you early - matching someone's effort, not racing ahead - means a fade hurts less and tells you something useful sooner. You cannot ghost-proof dating, but you can stop ghosting from defining your sense of yourself.</p>
-          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M21 11.5a8.38 8.38 0 01-9 8.5 8.38 8.38 0 01-9-8.5A8.5 8.5 0 0112 3a8.5 8.5 0 019 8.5z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg><span><b>Honest take:</b> ghosting is their unfinished sentence, not your verdict. Pace your investment to soften the sting.</span></div>
+          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M21 11.5a8.38 8.38 0 01-9 8.5 8.38 8.38 0 01-9-8.5A8.5 8.5 0 0112 3a8.5 8.5 0 019 8.5z"/></svg><span><b>Honest take:</b> ghosting is their unfinished sentence, not your verdict. Pace your investment to soften the sting.</span></div>
         </div></div>
       </div>
 
@@ -461,7 +480,7 @@ footer{background:var(--ink);padding:62px 0 28px}
           <p>Nobody figures relationships out purely on their own. We all learn from somewhere - parents, friends, films, past relationships. The question is never whether you had input, only whether the input was any good.</p>
           <p>Reading thoughtful advice is not a sign of failing at something everyone else finds easy. It is the same as reading about anything else you care about. Plenty of people quietly struggling are simply working from a patchy, accidental education in love.</p>
           <p>Use advice the way you would use a map, not a script. It points out terrain you might not have noticed. You still walk the path yourself - it just helps to know what is ahead.</p>
-          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 11h8M8 15h6"/></svg><span><b>Honest take:</b> wanting guidance is not weakness - it is just refusing to keep guessing about something this important.</span></div>
+          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg><span><b>Honest take:</b> wanting guidance is not weakness - it is just refusing to keep guessing about something this important.</span></div>
         </div></div>
       </div>
 
@@ -497,7 +516,7 @@ footer{background:var(--ink);padding:62px 0 28px}
     </div>
     <div class="ob-vals">
       <div class="ob-val">
-        <div class="ob-val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M12 8v4l3 2"/></svg></div>
+        <div class="ob-val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/></svg></div>
         <h3>Honest, not flattering</h3>
         <p>If part of a doubt is true, we say so. Comfort that bends the facts is not actually comforting.</p>
       </div>
