@@ -388,6 +388,28 @@ footer{background:var(--ink);padding:62px 0 28px}
   .footer-in{grid-template-columns:1fr}
   .hc-float.one{left:-12px}
   .hc-float.two{right:-10px}
+}@media(max-width:960px){
+  .hero-in,.story-in{grid-template-columns:1fr;gap:46px}
+  .hero-card{max-width:440px;margin:0 auto}
+  .val-grid,.topic-grid,.art-grid{grid-template-columns:1fr 1fr}
+  .stats-in{grid-template-columns:1fr 1fr;gap:38px 24px}
+  .coach{grid-template-columns:1fr}
+  .coach-portrait{min-height:240px}
+  .footer-in{grid-template-columns:1fr 1fr}
+}@media(max-width:640px){
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+  .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px}
+  .nav-links.open a{padding:13px}
+  .section{padding:62px 0}
+  .val-grid,.topic-grid,.art-grid{grid-template-columns:1fr}
+  .stats-in{grid-template-columns:1fr 1fr}
+  .coach-body{padding:34px 26px}
+  .nl-form{flex-direction:column;border-radius:18px;padding:10px}
+  .nl-form button{border-radius:12px}
+  .footer-in{grid-template-columns:1fr}
+  .hc-float.one{left:-12px}
+  .hc-float.two{right:-10px}
 }
 /* page */
 :root{
@@ -558,7 +580,7 @@ p{margin-bottom:18px;color:#aaa;line-height:1.75}
   </div>
 </nav>
 <article itemscope itemtype="https://schema.org/Article"><div class="art">
-  <div class="meta"><a href="../" style="color:#555">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-17"><time datetime="2026-05-17">May 17, 2026</time></time> &nbsp;·&nbsp; Dating & Relationships</div>
+  <div class="meta"><a href="../" style="color:#555">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-17"><time datetime="2026-05-17"><time datetime="2026-05-17">May 17, 2026</time></time></time> &nbsp;·&nbsp; Dating & Relationships</div>
   <h1>Why Your Dating App Profile Isn't Getting Matches (And How to Fix It)</h1>
   <div style="font-size:13px;color:#555;margin-bottom:24px">By <strong style="color:#aaa">Dr. Priya Sharma</strong></div>
   <img src="https://images.pexels.com/photos/7339183/pexels-photo-7339183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Person holding a smartphone displaying a dating app profile with photos and bio text visible on screen" loading="lazy" style="width:100%;height:400px;object-fit:cover;border-radius:8px;margin:28px 0"><p style="font-size:11px;color:#555;margin:-16px 0 20px">Photo by cottonbro studio / Pexels</p>
@@ -701,7 +723,7 @@ p{margin-bottom:18px;color:#aaa;line-height:1.75}
     }).catch(function(){allComments=[];rerender();});
   }
 })();
-</script></article></article>
+</script></article></article></article>
 <footer>
   <div class="wrap">
     <div class="footer-in">
