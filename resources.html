@@ -218,9 +218,7 @@ footer{background:var(--ink);padding:62px 0 28px}
 
 /* ---- REVEAL ---- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-
-@media(max-width:960px){
+.reveal.in{opacity:1;transform:none}@media(max-width:960px){
   .hero-in,.story-in{grid-template-columns:1fr;gap:46px}
   .hero-card{max-width:440px;margin:0 auto}
   .val-grid,.topic-grid,.art-grid{grid-template-columns:1fr 1fr}
@@ -228,8 +226,7 @@ footer{background:var(--ink);padding:62px 0 28px}
   .coach{grid-template-columns:1fr}
   .coach-portrait{min-height:240px}
   .footer-in{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
+}@media(max-width:640px){
   .nav-links{display:none}
   .nav-toggle{display:block}
   .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--border);padding:12px}
@@ -244,6 +241,32 @@ footer{background:var(--ink);padding:62px 0 28px}
   .hc-float.one{left:-12px}
   .hc-float.two{right:-10px}
 }
+
+/* CONTRAST-AUDIT v1 */
+/* Article-page-only contrast guard. body[data-page-depth="1"] is stamped on
+   every article by layout_shell.wrap_page. Homepage (depth=0) is untouched. */
+body[data-page-depth="1"] h1,
+body[data-page-depth="1"] h2,
+body[data-page-depth="1"] h3,
+body[data-page-depth="1"] .art-title,
+body[data-page-depth="1"] .article-title,
+body[data-page-depth="1"] .mag-hero h1,
+body[data-page-depth="1"] .imm-hero h1,
+body[data-page-depth="1"] article h1,
+body[data-page-depth="1"] article h2,
+body[data-page-depth="1"] article h3{color:#000000 !important}
+body[data-page-depth="1"] article p,
+body[data-page-depth="1"] article li,
+body[data-page-depth="1"] .art-body p,
+body[data-page-depth="1"] .mag-body p,
+body[data-page-depth="1"] .imm-body p,
+body[data-page-depth="1"] article .intro,
+body[data-page-depth="1"] article .concl,
+body[data-page-depth="1"] article strong{color:#1a1a1a !important}
+body[data-page-depth="1"] article a,
+body[data-page-depth="1"] article p a,
+body[data-page-depth="1"] article .intro a{color:#b8503f !important;text-decoration:underline;text-underline-offset:3px}
+/* /CONTRAST-AUDIT */
 </style>
 </head>
 <body data-page-depth="0">
@@ -360,19 +383,15 @@ footer{background:var(--ink);padding:62px 0 28px}
 .rs-cta h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);font-weight:600;color:#fff;letter-spacing:-.02em;line-height:1.16;margin-bottom:12px}
 .rs-cta p{font-size:15.5px;color:rgba(255,255,255,.82);margin-bottom:26px}
 .rs-cta a{display:inline-block;background:#fff;color:var(--rose);font-size:15px;font-weight:600;padding:14px 30px;border-radius:100px;transition:transform .15s}
-.rs-cta a:hover{transform:translateY(-2px)}
-
-@media(max-width:860px){
+.rs-cta a:hover{transform:translateY(-2px)}@media(max-width:860px){
   .rs-widget-grid{grid-template-columns:1fr;gap:26px}
   .rs-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:600px){
+}@media(max-width:600px){
   .rs-section{padding:54px 0}
   .rs-grid{grid-template-columns:1fr}
   .rs-widget{padding:28px 22px}
   .rs-book{flex-direction:column;gap:14px}
-}
-</style>
+}</style>
 
 <main>
 <section class="rs-hero">
@@ -465,7 +484,7 @@ footer{background:var(--ink);padding:62px 0 28px}
         </ul>
       </div>
       <div class="rs-card">
-        <div class="rs-ico"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg></div>
+        <div class="rs-ico"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M12 9v4M12 17h.01"/></svg></div>
         <h3>Red-Flags Checklist</h3>
         <p>Patterns worth pausing on - not to judge fast, but to stay clear-eyed early.</p>
         <ul class="rs-mini">
@@ -475,7 +494,7 @@ footer{background:var(--ink);padding:62px 0 28px}
         </ul>
       </div>
       <div class="rs-card">
-        <div class="rs-ico"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <div class="rs-ico"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M9 11l3 3L22 4"/></svg></div>
         <h3>Green-Flags Checklist</h3>
         <p>The quieter signs of a good match - the things that matter more than chemistry alone.</p>
         <ul class="rs-mini">
