@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1569",
+    "name": "Marcus T.",
+    "initials": "MT",
+    "color": "#ec4899",
+    "date_iso": "2026-05-20",
+    "date_display": "May 20, 2026",
+    "text": "Finally someone said it. I rewrote my profile based on this and got 3x more matches in a week. The part about avoiding group photos was eye-opening.",
+    "likes": 8
+  },
+  {
+    "id": "c2128",
+    "name": "Sarah M.",
+    "initials": "SM",
+    "color": "#ef4444",
+    "date_iso": "2026-05-23",
+    "date_display": "May 23, 2026",
+    "text": "Disagree with the 'be funny' advice. Most guys trying to be funny just come off as trying too hard. Authenticity matters way more.",
+    "likes": 11
+  },
+  {
+    "id": "c3154",
+    "name": "James K.",
+    "initials": "JK",
+    "color": "#f97316",
+    "date_iso": "2026-05-26",
+    "date_display": "May 26, 2026",
+    "text": "Question: does this apply equally to men and women? I feel like the dating app game is totally different depending on gender.",
+    "likes": 5
+  },
+  {
+    "id": "c4100",
+    "name": "Emma L.",
+    "initials": "EL",
+    "color": "#a78bfa",
+    "date_iso": "2026-06-01",
+    "date_display": "Jun 1, 2026",
+    "text": "I tried the mirror selfie swap suggestion and honestly it made a huge difference. My matches increased AND the quality of conversations improved.",
+    "likes": 9
+  },
+  {
+    "id": "c5903",
+    "name": "David P.",
+    "initials": "DP",
+    "color": "#a78bfa",
+    "date_iso": "2026-06-03",
+    "date_display": "Jun 3, 2026",
+    "text": "The real issue is that apps are oversaturated now. Even with a perfect profile, you're competing against thousands. Just my two cents.",
+    "likes": 7
+  }
+]
