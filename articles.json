@@ -11,5 +11,61 @@
       "sciencedirect.com"
     ],
     "category": "Psychology"
+  },
+  {
+    "title": "Hinge's 'Most Compatible' Overhaul in 2023 Changed How We Think About Algorithmic Dating",
+    "slug": "hinge-most-compatible-2023-algorithm",
+    "meta_description": "Dr. Priya Sharma breaks down Hinge's 2023 algorithm update, what it means for attachment and modern dating, and whether it actually works.",
+    "date": "April 17, 2023",
+    "date_iso": "2023-04-17",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/20716657/pexels-photo-20716657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pewresearch.org",
+      "journals.sagepub.com",
+      "apa.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Hinge's 2022 'Designed to Be Deleted' Push: What It Actually Meant for How We Date",
+    "slug": "hinge-2022-designed-deleted-dating",
+    "meta_description": "Hinge doubled down on its anti-swipe mission in 2022. Dr. Priya Sharma breaks down what that meant for attachment, dating culture, and you.",
+    "date": "June 08, 2022",
+    "date_iso": "2022-06-08",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/17469127/pexels-photo-17469127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pewresearch.org",
+      "pnas.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Bumble's 2023 Rebrand Was a Turning Point Nobody Talked About Enough",
+    "slug": "bumble-2023-rebrand-dating-culture",
+    "meta_description": "Bumble's 2023 rebrand changed more than its logo. Dr. Priya Sharma breaks down what it meant for modern dating culture and user psychology.",
+    "date": "August 27, 2023",
+    "date_iso": "2023-08-27",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/20881325/pexels-photo-20881325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pewresearch.org",
+      "pnas.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
