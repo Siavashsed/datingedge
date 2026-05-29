@@ -28,7 +28,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   },
   {
     "title": "Hinge's 2022 'Designed to Be Deleted' Push: What It Actually Meant for How We Date",
@@ -45,7 +46,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   },
   {
     "title": "Bumble's 2023 Rebrand Was a Turning Point Nobody Talked About Enough",
@@ -63,6 +65,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   }
 ]
