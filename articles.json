@@ -67,5 +67,43 @@
       "en"
     ],
     "category": "First Dates"
+  },
+  {
+    "title": "Building Attraction Through Delayed Availability: The Real Psychology Behind It",
+    "slug": "delayed-availability-attraction-psychology",
+    "meta_description": "Dr. Priya Sharma explains the psychology of delayed availability and how strategic scarcity builds attraction - and when it backfires.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/7680339/pexels-photo-7680339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nature.com",
+      "psycnet.apa.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Tinder's 2019 'Swipe Night' Launch Was the Most Revealing Thing to Happen to Dating Apps That Year",
+    "slug": "tinder-swipe-night-2019-dating-apps",
+    "meta_description": "Tinder's Swipe Night in 2019 changed how dating apps think about engagement. Here's what it really meant for attachment and modern relationships.",
+    "date": "November 02, 2019",
+    "date_iso": "2019-11-02",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/30530424/pexels-photo-30530424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "theverge.com",
+      "pewresearch.org",
+      "psycnet.apa.org",
+      "ir.match.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
