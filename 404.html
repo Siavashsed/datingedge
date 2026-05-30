@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page Not Found - The Dating Edge</title>
 
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="alternate icon" href="favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,7 +131,7 @@ img{max-width:100%;display:block}
 
 /* ---- TOPICS ---- */
 .topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.topic{position:relative;border-radius:16px;padding:30px 26px;overflow:hidden;border:1px solid var(--border);background:var(--bg2);transition:transform .2s,box-shadow .2s}
+.topic{position:relative;border-radius:16px;padding:30px 26px;overflow:hidden;border:1px solid var(--border);background:var(--bg2);transition:transform .2s,box-shadow .2s;text-decoration:none;display:block;color:inherit}
 .section.alt .topic{background:var(--bg)}
 .topic:hover{transform:translateY(-4px);box-shadow:0 20px 38px -22px rgba(58,39,48,.32)}
 .topic .tnum{font-family:var(--serif);font-size:14px;font-weight:600;color:var(--rose)}
@@ -138,6 +139,22 @@ img{max-width:100%;display:block}
 .topic p{font-size:14px;color:var(--ink-soft)}
 .topic .tbar{position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rose);transform:scaleY(0);transform-origin:top;transition:transform .25s}
 .topic:hover .tbar{transform:scaleY(1)}
+
+/* ---- ALL ARTICLES (dark section variant) ---- */
+.section-dark{background:#0a0a0a;color:#fff;padding:96px 0}
+.section-dark .sec-kicker{color:#fca5a5;letter-spacing:.18em;font-size:11.5px;font-weight:700;text-transform:uppercase}
+.section-dark .sec-title{color:#fff;font-family:var(--serif);font-size:clamp(30px,4vw,46px);font-weight:600;letter-spacing:-.02em;line-height:1.1;margin:14px 0 12px}
+.section-dark .sec-sub{color:rgba(255,255,255,.62);font-size:16.5px;line-height:1.55;max-width:560px;margin:0 auto}
+.section-dark .sec-head{text-align:center;margin-bottom:48px}
+.topic-dark{background:#161616 !important;border:1px solid rgba(255,255,255,.08) !important}
+.topic-dark h3{color:#fff !important}
+.topic-dark p{color:rgba(255,255,255,.62) !important}
+.topic-dark .tnum{color:#fca5a5 !important;letter-spacing:.06em}
+.topic-dark .tbar{background:#fff !important}
+.topic-dark:hover{background:#1f1f1f !important;border-color:rgba(255,255,255,.18) !important;box-shadow:0 22px 42px -22px rgba(0,0,0,.55) !important}
+.all-articles-cta{text-align:center;margin-top:44px}
+.all-articles-cta a{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0a0a0a;padding:14px 28px;border-radius:999px;font-family:var(--sans,'Inter','Helvetica',sans-serif);font-size:14px;font-weight:700;letter-spacing:-.005em;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.all-articles-cta a:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(255,255,255,.25)}
 
 /* ---- ARTICLES ---- */
 .art-toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:38px}
@@ -280,7 +297,7 @@ body[data-page-depth="1"] article .intro a{color:#0a0a0a !important;text-decorat
   <div class="nav-in">
     <a href="./" class="nav-logo">Dating<em>Edge</em></a>
     <div class="nav-links" id="navLinks">
-      <a href="./#topics">Topics</a>
+      <a href="./#all-articles">All Articles</a>
       <a href="./#why">Why Us</a>
       <a href="./#articles">Articles</a>
       <a href="./#coach">Coach</a>
