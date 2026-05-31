@@ -107,5 +107,43 @@
       "en"
     ],
     "category": "First Dates"
+  },
+  {
+    "title": "The Conversation Topics That Actually Create Connection on a First Date",
+    "slug": "conversation-topics-first-date-connection",
+    "meta_description": "Clinical psychologist Dr. Priya Sharma reveals which conversation topics build real connection on a first date, backed by research and clinical experience.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/5699520/pexels-photo-5699520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "apa.org",
+      "pewresearch.org"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Bumble's 2022 IPO Hangover and What It Revealed About the Dating App Business Model",
+    "slug": "bumble-2022-dating-app-crisis",
+    "meta_description": "In 2022, Bumble's stock collapse exposed a crisis in how dating apps actually make money. Here's what it meant for users and the industry.",
+    "date": "December 08, 2022",
+    "date_iso": "2022-12-08",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/5047091/pexels-photo-5047091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "vox.com",
+      "pnas.org",
+      "journals.sagepub.com",
+      "ftc.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
