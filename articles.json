@@ -124,7 +124,8 @@
     "posted_iso": "2026-05-31",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   },
   {
     "title": "Bumble's 2022 IPO Hangover and What It Revealed About the Dating App Business Model",
@@ -144,6 +145,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   }
 ]
