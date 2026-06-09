@@ -183,5 +183,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "OkCupid Banned Hate Speech in 2019 and Nobody Talked About It Enough",
+    "slug": "okcupid-hate-speech-ban-2019",
+    "meta_description": "OkCupid's 2019 decision to ban white supremacists from its platform reshaped how dating apps handle extremism. Here's what it meant for the field.",
+    "date": "August 11, 2019",
+    "date_iso": "2019-08-11",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/26922999/pexels-photo-26922999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "buzzfeednews.com",
+      "pewresearch.org",
+      "journals.sagepub.com",
+      "ftc.gov"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
