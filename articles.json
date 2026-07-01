@@ -203,5 +203,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Love Bombing Looks Like a Fairy Tale Until It Doesn't",
+    "slug": "love-bombing-vs-genuine-interest-red-flags",
+    "meta_description": "Clinical psychologist Dr. Priya Sharma explains exactly how to tell love bombing from genuine interest before you're already in too deep.",
+    "date": "July 01, 2026",
+    "date_iso": "2026-07-01",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/8374269/pexels-photo-8374269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "apa.org"
+    ],
+    "posted_iso": "2026-07-01",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Facebook Dating Launched in 2019 and We All Pretended Not to Care",
+    "slug": "facebook-dating-launch-2019",
+    "meta_description": "Facebook Dating quietly launched in the US in September 2019. Here's why it mattered more than the dating world wanted to admit.",
+    "date": "May 16, 2019",
+    "date_iso": "2019-05-16",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/25849099/pexels-photo-25849099.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ftc.gov",
+      "pnas.org",
+      "psycnet.apa.org",
+      "businessofapps.com"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
