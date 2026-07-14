@@ -240,5 +240,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Why Most Couples Survive an Affair, and What Separates the Ones Who Don't",
+    "slug": "rebuilding-trust-after-infidelity",
+    "meta_description": "Rebuilding trust after infidelity is possible, but only with specific behaviors. Here is what the research and 15 years in my office actually show works.",
+    "date": "July 13, 2026",
+    "date_iso": "2026-07-13",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/8351191/pexels-photo-8351191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "gottman.com",
+      "apa.org",
+      "psycnet.apa.org"
+    ],
+    "posted_iso": "2026-07-13",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Bumble Told Women to Quit Celibacy. It Backfired Within a Week.",
+    "slug": "bumble-celibacy-ad-backlash-2024",
+    "meta_description": "Bumble's May 2024 anti-celibacy billboards triggered a fast backlash and an apology. Here is what the misfire revealed about dating in 2024.",
+    "date": "October 12, 2024",
+    "date_iso": "2024-10-12",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/36812639/pexels-photo-36812639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "theguardian.com",
+      "forbes.com",
+      "pewresearch.org"
+    ],
+    "posted_iso": "2026-07-13",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
