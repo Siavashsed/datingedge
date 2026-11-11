@@ -288,6 +288,29 @@ body[data-page-depth="1"] article p a,
 body[data-page-depth="1"] article .intro a{color:var(--text,#0a0a0a) !important;text-decoration:none;text-underline-offset:3px}
 /* /CONTRAST-AUDIT */
 </style>
+<!-- Meta Pixel (Kavalsia network) -->
+<script>
+(function(){
+if(window.__KAVALSIA_META_LOADED)return;window.__KAVALSIA_META_LOADED=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', "3117791381934109");
+var FIRE_PV=true,SITE_ID="datingedge",SITE_NAME="The Dating Edge",VIEW_EVT="Viewed The Dating Edge",SIGNUP_EVT="The Dating Edge NewsletterSignup",MIRROR_CAPI=false;
+var segs=location.pathname.split('/').filter(Boolean);var SLUG=segs.length?segs[segs.length-1].replace(/\.html$/,''):'home';if(SLUG==='index')SLUG='home';
+var BASE={site_id:SITE_ID,site_name:SITE_NAME,content_name:SLUG,page_path:location.pathname};
+function P(x){var o={};for(var k in BASE)o[k]=BASE[k];for(var j in x)o[j]=x[j];return o;}
+if(FIRE_PV){try{fbq('track','PageView');}catch(e){}}
+try{fbq('trackCustom',VIEW_EVT,P({page_title:document.title,referrer:document.referrer||''}));}catch(e){}
+function mirrorCAPI(evtName,payload){if(!MIRROR_CAPI)return;try{var hub=(window.KAVALSIA_HUB_URL||'').replace(/\/$/,'');if(!hub)return;fetch(hub+'/api/meta-capi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({site_id:SITE_ID,event_name:evtName,payload:payload})}).catch(function(){});}catch(e){}}
+mirrorCAPI(VIEW_EVT,P({}));
+var MARKS=[30,60,120],fired={},acc=0,last=document.hidden?0:Date.now();
+function tick(){var now=Date.now();if(last){acc+=(now-last)/1000;}last=document.hidden?0:now;for(var i=0;i<MARKS.length;i++){var m=MARKS[i];if(!fired[m]&&acc>=m){fired[m]=1;var ev='TimeSpent'+m+'s';try{fbq('trackCustom',ev,P({seconds:m}));}catch(e){}mirrorCAPI(ev,P({seconds:m}));}}if(fired[120])clearInterval(iv);}
+var iv=setInterval(tick,1000);document.addEventListener('visibilitychange',tick);
+function sha256Hex(str){if(!window.crypto||!crypto.subtle)return Promise.resolve('');var buf=new TextEncoder().encode(String(str||'').trim().toLowerCase());return crypto.subtle.digest('SHA-256',buf).then(function(h){return Array.prototype.map.call(new Uint8Array(h),function(b){return ('00'+b.toString(16)).slice(-2);}).join('');});}
+document.addEventListener('submit',function(ev){try{var f=ev.target;if(!f||!f.tagName||f.tagName.toLowerCase()!=='form')return;var emailEl=f.querySelector('input[type=email], input[name*=email i]');if(!emailEl||!emailEl.value)return;var email=emailEl.value;sha256Hex(email).then(function(h){try{fbq('trackCustom',SIGNUP_EVT,P({email_hashed:h}));}catch(e){}mirrorCAPI(SIGNUP_EVT,P({email_hashed:h}));});}catch(e){}},true);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=3117791381934109&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body data-page-depth="0">
 <nav class="site-nav">
@@ -460,7 +483,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#0a0a0a) !important;
           <p>First, the important part: being ghosted is not a measure of your worth. It is mostly a measure of the other person's comfort with conflict. Ghosting is an avoidance habit the apps make easy - it says far more about them than about you.</p>
           <p>That said, "always" is worth gently examining. If it keeps happening, look at patterns you can actually influence: are you investing heavily before you have met, reading early texts as commitment, or staying with people who were lukewarm from the start?</p>
           <p>Keeping your feet under you early - matching someone's effort, not racing ahead - means a fade hurts less and tells you something useful sooner. You cannot ghost-proof dating, but you can stop ghosting from defining your sense of yourself.</p>
-          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M21 11.5a8.38 8.38 0 01-9 8.5 8.38 8.38 0 01-9-8.5A8.5 8.5 0 0112 3a8.5 8.5 0 019 8.5z"/></svg><span><b>Honest take:</b> ghosting is their unfinished sentence, not your verdict. Pace your investment to soften the sting.</span></div>
+          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M21 11.5a8.38 8.38 0 01-9 8.5 8.38 8.38 0 01-9-8.5A8.5 8.5 0 0112 3a8.5 8.5 0 019 8.5z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg><span><b>Honest take:</b> ghosting is their unfinished sentence, not your verdict. Pace your investment to soften the sting.</span></div>
         </div></div>
       </div>
 
@@ -500,7 +523,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#0a0a0a) !important;
           <p>Nobody figures relationships out purely on their own. We all learn from somewhere - parents, friends, films, past relationships. The question is never whether you had input, only whether the input was any good.</p>
           <p>Reading thoughtful advice is not a sign of failing at something everyone else finds easy. It is the same as reading about anything else you care about. Plenty of people quietly struggling are simply working from a patchy, accidental education in love.</p>
           <p>Use advice the way you would use a map, not a script. It points out terrain you might not have noticed. You still walk the path yourself - it just helps to know what is ahead.</p>
-          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg><span><b>Honest take:</b> wanting guidance is not weakness - it is just refusing to keep guessing about something this important.</span></div>
+          <div class="ob-truth"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.4"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 11h8M8 15h6"/></svg><span><b>Honest take:</b> wanting guidance is not weakness - it is just refusing to keep guessing about something this important.</span></div>
         </div></div>
       </div>
 
@@ -536,7 +559,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#0a0a0a) !important;
     </div>
     <div class="ob-vals">
       <div class="ob-val">
-        <div class="ob-val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/></svg></div>
+        <div class="ob-val-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b8503f" stroke-width="2.2"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M12 8v4l3 2"/></svg></div>
         <h3>Honest, not flattering</h3>
         <p>If part of a doubt is true, we say so. Comfort that bends the facts is not actually comforting.</p>
       </div>
