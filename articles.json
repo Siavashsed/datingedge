@@ -163,7 +163,8 @@
     "posted_iso": "2026-06-07",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   },
   {
     "title": "Hinge's 2024 'It's Designed to Be Deleted' Rebrand Was a Turning Point Nobody Saw Coming",
@@ -182,7 +183,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   },
   {
     "title": "OkCupid Banned Hate Speech in 2019 and Nobody Talked About It Enough",
@@ -202,7 +204,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   },
   {
     "title": "Love Bombing Looks Like a Fairy Tale Until It Doesn't",
@@ -219,7 +222,8 @@
     "posted_iso": "2026-07-01",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   },
   {
     "title": "Facebook Dating Launched in 2019 and We All Pretended Not to Care",
@@ -239,7 +243,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   },
   {
     "title": "Why Most Couples Survive an Affair, and What Separates the Ones Who Don't",
@@ -257,7 +262,8 @@
     "posted_iso": "2026-07-13",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   },
   {
     "title": "Bumble Told Women to Quit Celibacy. It Backfired Within a Week.",
@@ -276,7 +282,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "First Dates"
   },
   {
     "title": "Why a Situationship Wrecks You More Than a Clean Breakup",
@@ -294,7 +301,8 @@
     "posted_iso": "2026-07-15",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   },
   {
     "title": "Emotional Unavailability Is Learned. Here's What Actually Rewires It",
@@ -313,6 +321,7 @@
     "posted_iso": "2026-07-17",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Psychology"
   }
 ]
