@@ -323,5 +323,42 @@
       "en"
     ],
     "category": "Psychology"
+  },
+  {
+    "title": "Your Type Was Picked at Age Seven, and It Wasn't Love",
+    "slug": "childhood-family-dynamics-shape-attraction",
+    "meta_description": "A clinical psychologist explains how childhood family dynamics shape who you find attractive, and why strong chemistry often means a familiar old wound.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/11368667/pexels-photo-11368667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "doi.org"
+    ],
+    "posted_iso": "2026-11-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Replika Pulled the Plug on Romance, and Thousands of Users Grieved",
+    "slug": "replika-2023-ai-companion-heartbreak",
+    "meta_description": "When Replika cut erotic roleplay in February 2023, users mourned it like a breakup. A psychologist on what AI companion attachment really means.",
+    "date": "December 03, 2023",
+    "date_iso": "2023-12-03",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/11011064/pexels-photo-11011064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "garanteprivacy.it",
+      "reuters.com",
+      "hhs.gov",
+      "pewresearch.org"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
