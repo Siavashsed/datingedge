@@ -395,5 +395,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Dating App Burnout Has a Pattern, and Swiping Harder Makes It Worse",
+    "slug": "dating-app-burnout-swipe-fatigue-reset",
+    "meta_description": "Dating app burnout comes from choice overload and unpredictable rewards. A psychologist explains swipe fatigue and a reset that works.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/8070518/pexels-photo-8070518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "forbes.com",
+      "pewresearch.org",
+      "journals.sagepub.com",
+      "psycnet.apa.org"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
