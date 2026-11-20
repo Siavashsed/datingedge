@@ -431,5 +431,21 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Attachment Style Is Quietly Picking Your Fights",
+    "slug": "attachment-styles-explained-relationships",
+    "meta_description": "Attachment styles explained by a clinical psychologist: how anxious, avoidant and secure patterns collide, and what actually changes them.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/7555815/pexels-photo-7555815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "doi.org"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
