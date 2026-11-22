@@ -464,5 +464,40 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Bored People Text Fast. Interested People Do This Instead",
+    "slug": "genuinely-interested-or-just-bored",
+    "meta_description": "Bored people give you attention. Interested people give you effort. A clinical psychologist explains how to tell the difference before you waste months.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/33309395/pexels-photo-33309395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pewresearch.org",
+      "gottman.com"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Tinder Lost Its CEO in 2022 and Swiping Lost Its Spell",
+    "slug": "tinder-ceo-shakeup-2022-swipe-fatigue",
+    "meta_description": "Tinder swapped CEOs in 2022 as dating app fatigue hit. A psychologist-minded look at what the shake-up said about swiping and why it matters for you.",
+    "date": "August 29, 2022",
+    "date_iso": "2022-08-29",
+    "author": "Alex Webb",
+    "image": "https://images.pexels.com/photos/6147368/pexels-photo-6147368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pewresearch.org",
+      "ir.mtch.com"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
