@@ -499,5 +499,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Constant Texting Is Quietly Starving the Spark Between You",
+    "slug": "texting-too-much-kills-romantic-tension",
+    "meta_description": "Texting too much kills romantic tension by removing mystery and curiosity. A psychologist explains what to do instead, and when it backfires.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "Alex Webb",
+    "image": "https://images.pexels.com/photos/7244263/pexels-photo-7244263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "science.org"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
