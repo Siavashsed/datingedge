@@ -516,5 +516,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your First Date Needs One Slightly Too Personal Question",
+    "slug": "first-date-conversation-topics-connection",
+    "meta_description": "The best first date conversation topics reveal how someone thinks, not what they do. Here's what the research and my clinical work say actually works.",
+    "date": "November 24, 2026",
+    "date_iso": "2026-11-24",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/12714007/pexels-photo-12714007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "doi.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-11-24",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
