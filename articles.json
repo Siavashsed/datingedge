@@ -533,5 +533,21 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Bad First Impression Isn't the Problem. Your Panic Afterward Is",
+    "slug": "recover-bad-first-impression",
+    "meta_description": "Recover from a bad first impression with one light acknowledgment, then consistent behavior. A psychologist explains what actually works and when to let go.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Ryan Cross",
+    "image": "https://images.pexels.com/photos/36697512/pexels-photo-36697512.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
