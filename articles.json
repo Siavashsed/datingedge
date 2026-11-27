@@ -567,5 +567,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Why Your Last Five Exes All Feel Like One Person",
+    "slug": "stop-dating-the-same-person",
+    "meta_description": "Stop dating the same person in different bodies. A clinical psychologist explains why the pattern repeats and the audit that finally breaks it.",
+    "date": "November 27, 2026",
+    "date_iso": "2026-11-27",
+    "author": "Dr. Priya Sharma",
+    "image": "https://images.pexels.com/photos/8259516/pexels-photo-8259516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "pewresearch.org"
+    ],
+    "posted_iso": "2026-11-27",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
